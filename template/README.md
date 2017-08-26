@@ -9,8 +9,11 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# 自动编译结果到指定文件夹
 npm run dev
+
+# serve with hot reload at localhost:8080
+npm run webdev
 
 # build for production with minification
 npm run build

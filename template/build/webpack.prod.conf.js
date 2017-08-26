@@ -94,7 +94,15 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    // copy custom manifest
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../src/manifest.json'),
+        to: config.build.assetsPublicPath,
+        ignore: ['.*']
+      }
+    ]),
   ]
 })
 

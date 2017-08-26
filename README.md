@@ -24,8 +24,11 @@ npm run dev 后代码会自动更新到 `dist` 目录，请不要用 `Hbuilder` 
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# 自动编译结果到指定文件夹
 npm run dev
+
+# serve with hot reload at localhost:8080
+npm run webdev
 
 # build for production with minification
 npm run build

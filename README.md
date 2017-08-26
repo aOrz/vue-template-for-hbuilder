@@ -1,3 +1,39 @@
+# vue-template-for-hbuilder
+
+> 使用Vue单文件，开发Html5+应用
+
+## 说明：
+
+> 该模板生成自 vue-cli，对其dev模式进行了修改，用来使用hbuilder的开发
+>
+> 项目背景，自己之前开发了一个 app，使用的mui，后来引入了Vue，由于Hbuilder，还没编译es6的功能，及hbuilder有自己的web服务器，如果我们自己启动web服务的话，又不能将编译结果实时的推送到真机调试模式下，所以产生了修改vue项目模板的需求。
+
+## 使用方法：
+``` bash
+$ npm install -g vue-cli
+$ vue init aOrz/vue-template-for-hbuilder my-project
+$ cd my-project
+$ npm install
+$ npm run dev
+```
+使用Hbuilder打开`my-project/dist`中的目录，打开 `manifest.json` 点击云端获取，获取appid，并同步到 `src/manifest.json` 中，然后真机运行。
+npm run dev 后代码会自动更新到 `dist` 目录，请不要用 `Hbuilder` 打开编译后的文件，以免影响真机测试
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
@@ -15,7 +51,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init aOrz/vue-template-for-hbuilder my-project
 $ cd my-project
 $ npm install
 $ npm run dev

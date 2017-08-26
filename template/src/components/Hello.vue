@@ -1,6 +1,15 @@
 <template>
   <div class="hello">
     <h1>\{{ msg }}</h1>
+    <h2>for hbuilder</h2>
+    <ul>
+      <li><a href="https://github.com/aOrz/vue-template-for-hbuilder" target="_blank">模板仓库(欢迎 star)</a></li>
+      <li><a href="http://dev.dcloud.net.cn/mui/" target="_blank">Mui</a></li>
+      <li><a href="http://www.html5plus.org/doc/zh_cn/accelerometer.html" target="_blank">HTML 5+</a></li>
+      <li><a href="http://ask.dcloud.net.cn/explore/" target="_blank">社区</a></li>
+      <br>
+      <li><a href="https://github.com/aOrz/vue-template-for-hbuilder/blob/master/README.md" target="_blank">此模板的文档</a></li>
+    </ul>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -25,7 +34,7 @@ export default {
   name: 'hello',
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
     return {
-      msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+      msg: 'Welcome to Your Hbuildr App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

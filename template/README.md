@@ -1,7 +1,8 @@
 # {{ name }}
 
 > {{ description }}
-
+## 模板文档
+[使用文档](https://github.com/aOrz/vue-template-for-hbuilder/edit/master/README.md)
 ## Build Setup
 
 ``` bash

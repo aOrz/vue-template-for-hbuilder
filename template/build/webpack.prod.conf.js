@@ -101,6 +101,9 @@ var webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../src/manifest.json'),
         to: config.build.assetsPublicPath,
         ignore: ['.*']
+      },
+      {
+        from: 'src/lib',to: 'lib'
       }
     ]),
   ]

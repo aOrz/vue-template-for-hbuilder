@@ -20,7 +20,8 @@
 import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 {{/unless}}
-import plus from 'plus' // use plus
+import plus from 'plus'{{#if_eq lintConfig "airbnb"}};{{/if_eq}} // use plus
+import mui from 'mui'{{#if_eq lintConfig "airbnb"}};{{/if_eq}} // use mui
 export default {
   name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
   components: {

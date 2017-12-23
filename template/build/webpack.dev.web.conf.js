@@ -30,6 +30,17 @@ module.exports = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true
     }),
+    // copy custom manifest
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../src/manifest.json'),
+        to: config.build.assetsPublicPath,
+        ignore: ['.*']
+      },
+      {
+        from: 'src/lib',to: 'lib'
+      }
+    ]),
     new FriendlyErrorsPlugin()
   ]
 })

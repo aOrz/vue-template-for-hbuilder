@@ -27,6 +27,10 @@ module.exports = {
       '@': resolve('src')
     }
   },
+  externals: {
+      mui: 'window.mui',
+      plus: 'window.plus'
+  },
   module: {
     rules: [
       {{#lint}}

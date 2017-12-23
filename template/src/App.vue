@@ -20,6 +20,7 @@
 import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 {{/unless}}
+import plus from 'plus' // use plus
 export default {
   name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
   components: {

@@ -36,6 +36,11 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+## 分享交流
+
+打赏|加小助手进微信群
+:---:|:---:
+<img src="https://fddcn.cn/wp-content/uploads/2017/12/WechatIMG117.jpeg" width="200"/>  |  <img src="https://fddcn.cn/wp-content/uploads/2017/12/WechatIMG116.jpeg" width="200"/>
 
 # vue-webpack-boilerplate
 

@@ -101,3 +101,7 @@ You can fork this repo to create your own boilerplate, and use it with `vue-cli`
 ``` bash
 vue init username/repo my-project
 ```
+
+## Build-script regression checks
+
+Run `node --test tests/build.test.cjs` with Node.js 18+ (no dependencies required). This checks the build script's success/error exit behavior with a stubbed compiler; it does not replace the generated project's integration tests in `test.sh`.
